@@ -3129,6 +3129,10 @@ ul.technology li:hover:before {
 .blog-posts .post h2 a:hover{
 	text-decoration:none;
 }
+.blog-posts .post .blog-post-details-right{
+	text-align: right;
+	padding-bottom: 5px;
+}
 .blog-posts .post .blog-post-details{
 	color:#999999;
 }
