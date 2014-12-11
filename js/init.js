@@ -1,11 +1,11 @@
 jQuery(function($){
 
-var TENTERED = window.TENTERED || {};
+var ttrd = window.ttrd || {};
 
 /* ==================================================
 	Contact Form Validations
 ================================================== */
-	TENTERED.ContactForm = function(){
+	ttrd.ContactForm = function(){
 		$('.contact-form').each(function(){
 			var formInstance = $(this);
 			formInstance.submit(function(){
@@ -44,7 +44,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
 	Search Bar
 ================================================== */
-	TENTERED.SearchBar = function(){
+	ttrd.SearchBar = function(){
 		$(".search-icon #open").click(function(){
 			$(".search-icon #open").hide();
 			$(".search-icon #close").css("display","block");
@@ -62,7 +62,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
 	Responsive Nav Menu
 ================================================== */
-	TENTERED.navMenu = function() {
+	ttrd.navMenu = function() {
 		  // Responsive Menu Events
 		  $("#main-menu").clone().appendTo(".mobile-menu > div > div");
 		  $(".mmenu-toggle").click(function(){
@@ -81,7 +81,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
 	Sticky Animated Nav Menu
 ================================================== */		
-	TENTERED.stickyanimated = function() {
+	ttrd.stickyanimated = function() {
 
 			if($("body").hasClass("boxed"))
 				return false;
@@ -158,7 +158,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
 	Scroll to Top
 ================================================== */
-	TENTERED.scrollToTop = function(){
+	ttrd.scrollToTop = function(){
 		var windowWidth = $(window).width(),
 			didScroll = false;
 	
@@ -188,7 +188,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Accordion
 ================================================== */
-	TENTERED.accordion = function(){
+	ttrd.accordion = function(){
 		var accordion_trigger = $('.accordion-heading.accordionize');
 		
 		accordion_trigger.delegate('.accordion-toggle','click', function(event){
@@ -208,7 +208,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Toggle
 ================================================== */
-	TENTERED.toggle = function(){
+	ttrd.toggle = function(){
 		var accordion_trigger_toggle = $('.accordion-heading.togglize');
 		
 		accordion_trigger_toggle.delegate('.accordion-toggle','click', function(event){
@@ -226,14 +226,14 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Tooltip
 ================================================== */
-	TENTERED.toolTip = function(){ 
+	ttrd.toolTip = function(){ 
 		$('a[data-toggle=tooltip]').tooltip();
 	}
 /* ==================================================
    Pricing Tables
 ================================================== */
 	var $tallestCol;
-	TENTERED.pricingTable = function(){
+	ttrd.pricingTable = function(){
 		$('.pricing-table').each(function(){
 			$tallestCol = 0;
 			$(this).find('> div .features').each(function(){
@@ -247,7 +247,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    IsoTope Portfolio
 ================================================== */
-		TENTERED.IsoTope = function() {
+		ttrd.IsoTope = function() {
 
 			$("ul.sort-source").each(function() {
 				var source = $(this);
@@ -328,7 +328,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    IsoTope Full Width
 ================================================== */
-	TENTERED.IsoTopeFull = function() {
+	ttrd.IsoTopeFull = function() {
 		$('.isotope').each(function(){
 			var isotopeInstance = $(this);
 			var container = $(isotopeInstance).find('.portfolio-container');
@@ -401,7 +401,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Flickr Widget
 ================================================== */
-	TENTERED.FlickrWidget = function() {
+	ttrd.FlickrWidget = function() {
 		$('.flickr-widget').each(function(){
 			var flickrInstance = $(this); 
 			flickrImages = flickrInstance.attr("data-images-count") ? flickrInstance.attr("data-images-count") : "1",
@@ -419,7 +419,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Twitter Widget
 ================================================== */
-	TENTERED.TwitterWidget = function() {
+	ttrd.TwitterWidget = function() {
 		$('.twitter-widget').each(function(){
 			var twitterInstance = $(this); 
 			twitterTweets = twitterInstance.attr("data-tweets-count") ? twitterInstance.attr("data-tweets-count") : "1"
@@ -434,7 +434,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Owl Carousel
 ================================================== */
-	TENTERED.OwlCarousel = function() {
+	ttrd.OwlCarousel = function() {
 		$('.owl-carousel').each(function(){
 				var carouselInstance = $(this); 
 				carouselColumns = carouselInstance.attr("data-columns") ? carouselInstance.attr("data-columns") : "1",
@@ -468,7 +468,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Stellar Parallax
 ================================================== */
-	TENTERED.Stellar = function() {
+	ttrd.Stellar = function() {
 		if(!Modernizr.touch) {
 			$.stellar({
 				horizontalScrolling: false
@@ -478,7 +478,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Back to Top
 ================================================== */
-	TENTERED.BackToTop = function() {
+	ttrd.BackToTop = function() {
 		$(function() {
 			$('a#back-top').click(function () {
 				$('html, body').stop().animate({
@@ -490,7 +490,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    PrettyPhoto
 ================================================== */
-	TENTERED.PrettyPhoto = function() {
+	ttrd.PrettyPhoto = function() {
 		$(function(){
 			$("a[data-rel^='prettyPhoto']").prettyPhoto({
 				  opacity: 0.5,
@@ -502,7 +502,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    SuperFish menu
 ================================================== */
-	TENTERED.SuperFish = function() {
+	ttrd.SuperFish = function() {
 		$('.sf-menu').superfish({
 			  delay: 200,
 			  animation: {opacity:'show', height:'show'},
@@ -515,7 +515,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Animated Counters
 ================================================== */
-	TENTERED.Counters = function() {
+	ttrd.Counters = function() {
 		$('.counters').each(function () {
 			$(".timer .count").appear(function() {
 			var counter = $(this).html();
@@ -531,7 +531,7 @@ var TENTERED = window.TENTERED || {};
 /* ==================================================
    Sticky Navigation
 ================================================== */	
-	TENTERED.StickyNav = function() {
+	ttrd.StickyNav = function() {
 		if($("body").hasClass("boxed"))
 			return false;
 		$("#sticky-nav").sticky({topSpacing:0});
@@ -540,26 +540,26 @@ var TENTERED = window.TENTERED || {};
    Init Functions
 ================================================== */
 $(document).ready(function(){
-	TENTERED.ContactForm();
-	TENTERED.scrollToTop();
-	TENTERED.accordion();
-	TENTERED.toggle();
-	TENTERED.toolTip();
-	TENTERED.pricingTable();
-	TENTERED.navMenu();
-	TENTERED.stickyanimated();
-	TENTERED.SearchBar();
-	TENTERED.FlickrWidget();
-	TENTERED.TwitterWidget();
-	TENTERED.OwlCarousel();
-	TENTERED.Stellar();
-	TENTERED.BackToTop();
-	TENTERED.PrettyPhoto();
-	TENTERED.SuperFish();
-	TENTERED.Counters();
-	TENTERED.IsoTope();
-	TENTERED.IsoTopeFull();
-	TENTERED.StickyNav();
+	ttrd.ContactForm();
+	ttrd.scrollToTop();
+	ttrd.accordion();
+	ttrd.toggle();
+	ttrd.toolTip();
+	ttrd.pricingTable();
+	ttrd.navMenu();
+	ttrd.stickyanimated();
+	ttrd.SearchBar();
+	ttrd.FlickrWidget();
+	ttrd.TwitterWidget();
+	ttrd.OwlCarousel();
+	ttrd.Stellar();
+	ttrd.BackToTop();
+	ttrd.PrettyPhoto();
+	ttrd.SuperFish();
+	ttrd.Counters();
+	ttrd.IsoTope();
+	ttrd.IsoTopeFull();
+	ttrd.StickyNav();
 });
 
 // FITVIDS

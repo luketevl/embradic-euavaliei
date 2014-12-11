@@ -1500,7 +1500,7 @@ border-style:none;
 }
 
 
-.tp-caption.tentered_white_huge{
+.tp-caption.ttrd_white_huge{
 	position:absolute;
 	font-weight:400;
 	font-size:60px;
@@ -1515,7 +1515,7 @@ border-style:none;
 	color:#fff
 }
 
-.tp-caption.tentered_white_big{
+.tp-caption.ttrd_white_big{
 	position:absolute;
 	font-weight:400;
 	font-size:40px;
@@ -1528,7 +1528,7 @@ border-style:none;
 	color:#fff
 }
 
-.tp-caption.tentered_white_small{
+.tp-caption.ttrd_white_small{
 	position:absolute;
 	font-weight:400;
 	font-size:18px;
@@ -1541,7 +1541,7 @@ border-style:none;
 	color:#fff
 }
 
-.tp-caption.tentered_dark_huge{
+.tp-caption.ttrd_dark_huge{
 	position:absolute;
 	font-weight:400;
 	font-size:60px;
@@ -1556,7 +1556,7 @@ border-style:none;
 	color:#222
 }
 
-.tp-caption.tentered_dark_big{
+.tp-caption.ttrd_dark_big{
 	position:absolute;
 	font-weight:400;
 	font-size:40px;
@@ -1569,7 +1569,7 @@ border-style:none;
 	color:#222
 }
 
-.tp-caption.tentered_dark_small{
+.tp-caption.ttrd_dark_small{
 	position:absolute;
 	font-weight:400;
 	font-size:18px;
