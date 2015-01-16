@@ -277,61 +277,44 @@
         </div>
       </div>
 -->
-      <script>
-        $(document).ready(function(){
-          $('.right-sidebar ul.nav-list-primary li').click(function(){
-            $(this).next('ul').toggle();     
-          });
-        });
-      </script>
       <div class="container">
         <div class="row">
           <aside class="col-md-3 sidebar right-sidebar">
               <div class="widget sidebar-widget categories-widget">
                 <h4>Categorias</h4>
+                
                 <ul class="nav-list-primary">
-                  
-                 <li class="dropdown "><a data-toggle="dropdown">Categorias</a>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown "><a data-toggle="dropdown">Categorias</a>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                      </ul>
-                    </li>
-                       <li class="dropdown "><a data-toggle="dropdown">Categorias</a>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                      </ul>
-                    </li>
-                       <li class="dropdown "><a data-toggle="dropdown">Categorias</a>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                        <li class="dropdown"><a href="#">Filho</a></li>
-                      </ul>
-                    </li>
-                </ul>
+                <li>
+                	<a href="#">Categoria</a>
+	                <ul class="sub">
+		                <li><a href="#">FILHO</a></li>
+		                <li><a href="#">FILHO</a></li>
+		                <li><a href="#">FILHO</a></li>
+		                <li><a href="#">FILHO</a></li>
+	              </ul>
+                </li>
+                <li>
+	                <a href="#">Categoria</a>
+		                <ul class="sub">
+			                <li><a href="#">FILHO</a></li>
+			                <li><a href="#">FILHO</a></li>
+			                <li><a href="#">FILHO</a></li>
+			                <li><a href="#">FILHO</a></li>
+		              </ul>
+                </li>
+                <li><a href="#">Categoria</a></li>
+                <li><a href="#">Categoria</a></li>
+                 <li>
+	                <a href="#">Categoria</a>
+		                <ul class="sub">
+			                <li><a href="#">FILHO</a></li>
+			                <li><a href="#">FILHO</a></li>
+			                <li><a href="#">FILHO</a></li>
+			                <li><a href="#">FILHO</a></li>
+		              </ul>
+                </li>
+              </ul>
+            
               </div>
             </aside>
             <div class="col-md-9">
@@ -986,6 +969,13 @@
 	//]]>
 </script> 
 <script src="style-switcher/js/jquery_cookie.js"></script> 
-<script src="style-switcher/js/script.js"></script> 
+<script src="style-switcher/js/script.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.right-sidebar ul.nav-list-primary li').click(function(){
+            $(this).find('ul.sub').toggle();     
+          });
+        });
+      </script> 
 </body>
 </html>
